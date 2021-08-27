@@ -91,6 +91,26 @@ console.log(isNaN(5/'a'));
 val1 = 5,val2=127;
 console.log(val1.toString(2)); //returns bnary
 console.log(val2.toString(16)); //returns hex
+console.log(Number(true));
+
+//arrays
+console.log('array');
+const arr1 = ["mukit",obj1,34];
+console.log(arr1.length);
+console.log(arr1[1].name);
+const arr2 = ['Mukit','Hasan','Pranto'];
+console.log(arr2.join(' ')); //convert to string
+// push,pop,shift,unshift
+arr2.unshift("Yoo");
+console.log(arr2.toString());
+console.log(arr1.concat(arr2).toString());
+arr2.splice(0,1,"Heyyy");
+console.log(arr2);
+console.log(arr2.slice(1,3));
+console.log(arr2.sort().reverse()) // descending order
+const arr3 = [24,56,21,54,76,89,12,122];
+console.log(arr3.sort()); //problem in numeric sort
+console.log(arr3.sort(function(a,b){return a-b}));
 
 
 
