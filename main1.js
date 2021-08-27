@@ -111,6 +111,31 @@ console.log(arr2.sort().reverse()) // descending order
 const arr3 = [24,56,21,54,76,89,12,122];
 console.log(arr3.sort()); //problem in numeric sort
 console.log(arr3.sort(function(a,b){return a-b}));
+//array iteration method
+arr3.forEach(arr_func_1);
+function arr_func_1(value,index,array){
+    console.log(`array index ${index} and value ${value}`);
+}
+const arr4 = arr3.map(arr_func_2);
+function arr_func_2(value){
+    if(value > 50){
+        return 'ov 50 val-'+value;
+    }
+    else{
+        return 'bel 50 val-'+value;
+    }
+}
+console.log(arr4);
+const over30 = arr3.filter(arr_func_3);
+function arr_func_3(value){
+    return value > 30;
+}
+console.log(over30);
+let sum = over30.reduce(arr_func_4);
+function arr_func_4(total,value){
+    return total+value;
+}
+console.log(sum);
 
 
 
