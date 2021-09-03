@@ -136,6 +136,49 @@ function arr_func_4(total,value){
     return total+value;
 }
 console.log(sum);
+//some, every
+
+//date
+let todays_date = new Date();
+console.log(todays_date.toDateString());
+//get method
+console.log(todays_date.getFullYear());
+console.log(todays_date.getMonth()); // january = 0
+//set method
+todays_date.setFullYear("2046");
+console.log(todays_date.toDateString());
+
+//math
+console.log(Math.round(10.71));
+console.log(Math.trunc(10.92)); // returns integer part
+console.log(Math.pow(2,5));
+console.log(Math.min(3,6,1,7));
+
+//random
+console.log(Math.random()); // 0(inclusive) to 1(exclusive)
+//5 to 20 integer ..both included
+console.log(Math.floor(Math.random()*16)+5);
+
+//boolean
+let st=""
+console.log(Boolean(st));
+
+//tarnary operator
+let info = (obj1.age > 18) ? "Voter": "Not a Voter";
+console.log(info);
+
+// switch case
+switch(new Date().getDay()){
+    case 5:
+    case 6:
+        info = "Off Day!! Chill";
+        break;
+    default:
+        info = "Working Days";
+}
+console.log(info);
+// swtich case uses srtict comparison(===)
+
 
 
 
