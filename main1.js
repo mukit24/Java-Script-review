@@ -179,6 +179,65 @@ switch(new Date().getDay()){
 console.log(info);
 // swtich case uses srtict comparison(===)
 
+// for in loop
+for(let x in arr3){
+    console.log(arr3[x]);
+}
+
+//for of loop
+for(let x of arr4){
+    console.log(x);
+}
+
+// sets
+const fruits = new Set(["banana","mango"]);
+console.log(fruits.values());
+fruits.add("apple");
+fruits.forEach(function(value){
+    console.log(value);
+})
+
+
+//maps
+const map1 = new Map([
+    ['apple',150],
+    ['banana',20],
+]);
+
+for(let x of map1){
+    console.log(x);
+}
+//there are diffs between objects and map
+
+// regular expression
+
+// use strict preventing you to use undeclared variable
+
+// arrow function
+print_x= x => 'x is'+x;
+say_hello = () => "hellooo";
+console.log(print_x(24));
+console.log(say_hello());
+
+// class
+class Person{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    isVoter(){
+        if(this.age > 18){
+            return "Voter";
+        }else{
+            return "Not Voter";
+        }
+    }
+}
+
+let person1 = new Person("Mukit",24);
+console.log(person1.isVoter());
+
 
 
 
